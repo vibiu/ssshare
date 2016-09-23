@@ -232,3 +232,91 @@
 2016-09-23 17:39:56 ERROR    [Errno 111] Connection refused
 2016-09-23 17:39:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49368
 2016-09-23 17:40:06 ERROR    [Errno 111] Connection refused
+2016-09-23 17:40:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49374
+2016-09-23 17:40:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49380
+2016-09-23 17:40:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49386
+2016-09-23 17:40:17 ERROR    [Errno 111] Connection refused
+2016-09-23 17:40:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49392
+2016-09-23 17:40:27 ERROR    [Errno 111] Connection refused
+2016-09-23 17:40:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49398
+2016-09-23 17:40:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49404
+2016-09-23 17:40:37 ERROR    [Errno 111] Connection refused
+2016-09-23 17:40:47 ERROR    [Errno 111] Connection refused
+2016-09-23 17:40:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49410
+2016-09-23 17:40:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49416
+2016-09-23 17:40:57 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:07 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49422
+2016-09-23 17:41:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49428
+2016-09-23 17:41:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49434
+2016-09-23 17:41:18 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49440
+2016-09-23 17:41:28 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49446
+2016-09-23 17:41:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49452
+2016-09-23 17:41:38 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:48 ERROR    [Errno 111] Connection refused
+2016-09-23 17:41:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49458
+2016-09-23 17:41:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49464
+2016-09-23 17:41:58 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:08 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49470
+2016-09-23 17:42:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49476
+2016-09-23 17:42:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49482
+2016-09-23 17:42:18 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49488
+2016-09-23 17:42:29 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49494
+2016-09-23 17:42:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49500
+2016-09-23 17:42:39 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49506
+2016-09-23 17:42:49 ERROR    [Errno 111] Connection refused
+2016-09-23 17:42:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49512
+2016-09-23 17:42:59 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49518
+2016-09-23 17:43:09 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49524
+2016-09-23 17:43:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49530
+2016-09-23 17:43:19 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49536
+2016-09-23 17:43:29 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49542
+2016-09-23 17:43:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49548
+2016-09-23 17:43:39 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49554
+2016-09-23 17:43:50 ERROR    [Errno 111] Connection refused
+2016-09-23 17:43:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49560
+2016-09-23 17:44:00 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49566
+2016-09-23 17:44:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49572
+2016-09-23 17:44:10 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49578
+2016-09-23 17:44:20 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49584
+2016-09-23 17:44:31 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49594
+2016-09-23 17:44:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49600
+2016-09-23 17:44:41 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: avatars1.githubusercontent.com:443
+2016-09-23 17:44:41 WARNING  timed out: avatars0.githubusercontent.com:443
+2016-09-23 17:44:41 WARNING  timed out: assets-cdn.github.com:443
+2016-09-23 17:44:41 WARNING  timed out: cloud.githubusercontent.com:443
+2016-09-23 17:44:41 WARNING  timed out: cloud.githubusercontent.com:443
+2016-09-23 17:44:41 WARNING  timed out: cloud.githubusercontent.com:443
+2016-09-23 17:44:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49606
+2016-09-23 17:44:51 ERROR    [Errno 111] Connection refused
+2016-09-23 17:44:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49612
+2016-09-23 17:44:58 INFO     connecting clients4.google.com:443 from 127.0.0.1:49618
+2016-09-23 17:45:01 ERROR    [Errno 111] Connection refused
+2016-09-23 17:45:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49624
+2016-09-23 17:45:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49630
+2016-09-23 17:45:11 ERROR    [Errno 111] Connection refused
+2016-09-23 17:45:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49636
+2016-09-23 17:45:21 ERROR    [Errno 111] Connection refused
+2016-09-23 17:45:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49642
+2016-09-23 17:45:32 ERROR    [Errno 111] Connection refused
