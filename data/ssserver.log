@@ -1,0 +1,234 @@
+2016-09-23 12:34:51 INFO     connecting coding.net:443 from 127.0.0.1:38404
+2016-09-23 12:34:52 INFO     connecting clients1.google.com:443 from 127.0.0.1:38410
+2016-09-23 12:34:52 INFO     connecting stats.g.doubleclick.net:443 from 127.0.0.1:38416
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38424
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38428
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38430
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38440
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38448
+2016-09-23 12:35:15 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38452
+2016-09-23 12:35:16 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:38458
+2016-09-23 12:35:23 INFO     connecting clients1.google.com:443 from 127.0.0.1:38464
+2016-09-23 12:35:41 INFO     connecting www.google.com:443 from 127.0.0.1:38470
+2016-09-23 12:35:45 INFO     connecting www.google.com:443 from 127.0.0.1:38476
+2016-09-23 12:35:45 INFO     connecting www.google.com:443 from 127.0.0.1:38482
+2016-09-23 12:35:45 INFO     connecting www.google.com:443 from 127.0.0.1:38488
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 12:42:16 WARNING  timed out: avatars.githubusercontent.com:443
+2016-09-23 15:50:24 INFO     connecting www.google.com:443 from 127.0.0.1:40820
+2016-09-23 15:50:24 INFO     connecting www.google.com:443 from 127.0.0.1:40822
+2016-09-23 15:50:24 INFO     connecting www.google.com:443 from 127.0.0.1:40824
+2016-09-23 15:50:25 INFO     connecting www.google.com:443 from 127.0.0.1:40834
+2016-09-23 15:50:26 INFO     connecting www.google.com:443 from 127.0.0.1:40840
+2016-09-23 15:50:28 INFO     connecting www.google.com:443 from 127.0.0.1:40846
+2016-09-23 15:52:14 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:40876
+2016-09-23 15:53:43 INFO     connecting translate.googleapis.com:443 from 127.0.0.1:41038
+2016-09-23 15:57:14 INFO     connecting clients2.google.com:443 from 127.0.0.1:41048
+2016-09-23 15:57:46 INFO     connecting clients2.google.com:443 from 127.0.0.1:41054
+2016-09-23 15:58:20 INFO     connecting clients2.google.com:443 from 127.0.0.1:41066
+2016-09-23 15:58:58 INFO     connecting clients2.google.com:443 from 127.0.0.1:41072
+2016-09-23 15:59:43 INFO     connecting clients2.google.com:443 from 127.0.0.1:41078
+2016-09-23 16:00:29 INFO     connecting www.googleapis.com:443 from 127.0.0.1:41088
+2016-09-23 16:00:42 INFO     connecting clients2.google.com:443 from 127.0.0.1:41126
+2016-09-23 16:01:08 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:41136
+2016-09-23 16:01:47 INFO     connecting translate.googleapis.com:443 from 127.0.0.1:41142
+2016-09-23 16:02:10 INFO     connecting clients2.google.com:443 from 127.0.0.1:41172
+2016-09-23 16:03:10 INFO     connecting clients4.google.com:443 from 127.0.0.1:41178
+2016-09-23 16:04:01 INFO     connecting clients4.google.com:443 from 127.0.0.1:41184
+2016-09-23 16:04:47 INFO     connecting clients2.google.com:443 from 127.0.0.1:41190
+2016-09-23 16:05:11 INFO     connecting www.shadowsocks5.com:443 from 127.0.0.1:41336
+2016-09-23 16:05:19 INFO     connecting clients4.google.com:443 from 127.0.0.1:41346
+2016-09-23 16:07:47 INFO     connecting clients4.google.com:443 from 127.0.0.1:41392
+2016-09-23 16:08:09 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:41402
+2016-09-23 16:09:09 INFO     connecting clients2.google.com:443 from 127.0.0.1:41408
+2016-09-23 16:11:40 INFO     connecting clients4.google.com:443 from 127.0.0.1:41442
+2016-09-23 17:07:29 ERROR    server already exists at 0.0.0.0:8382
+2016-09-23 17:28:06 WARNING  unsupported addrtype 46, maybe wrong password or encryption method
+2016-09-23 17:28:06 ERROR    can not parse header when handling connection from 127.0.0.1:44520
+2016-09-23 17:28:06 WARNING  unsupported addrtype 123, maybe wrong password or encryption method
+2016-09-23 17:28:06 ERROR    can not parse header when handling connection from 127.0.0.1:44524
+2016-09-23 17:28:06 WARNING  unsupported addrtype 196, maybe wrong password or encryption method
+2016-09-23 17:28:06 ERROR    can not parse header when handling connection from 127.0.0.1:44528
+2016-09-23 17:28:06 WARNING  unsupported addrtype 177, maybe wrong password or encryption method
+2016-09-23 17:28:06 ERROR    can not parse header when handling connection from 127.0.0.1:44532
+2016-09-23 17:28:12 WARNING  unsupported addrtype 171, maybe wrong password or encryption method
+2016-09-23 17:28:12 ERROR    can not parse header when handling connection from 127.0.0.1:44536
+2016-09-23 17:28:12 WARNING  unsupported addrtype 109, maybe wrong password or encryption method
+2016-09-23 17:28:12 ERROR    can not parse header when handling connection from 127.0.0.1:44540
+2016-09-23 17:28:42 WARNING  unsupported addrtype 20, maybe wrong password or encryption method
+2016-09-23 17:28:42 ERROR    can not parse header when handling connection from 127.0.0.1:44544
+2016-09-23 17:28:42 WARNING  unsupported addrtype 148, maybe wrong password or encryption method
+2016-09-23 17:28:42 ERROR    can not parse header when handling connection from 127.0.0.1:44548
+2016-09-23 17:29:04 INFO     connecting github.com:443 from 127.0.0.1:43466
+2016-09-23 17:29:05 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43476
+2016-09-23 17:29:05 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43480
+2016-09-23 17:29:05 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43482
+2016-09-23 17:29:05 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43484
+2016-09-23 17:29:05 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43496
+2016-09-23 17:29:06 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43504
+2016-09-23 17:29:06 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43508
+2016-09-23 17:29:06 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43514
+2016-09-23 17:29:06 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43520
+2016-09-23 17:29:07 INFO     connecting avatars1.githubusercontent.com:443 from 127.0.0.1:43526
+2016-09-23 17:29:08 INFO     connecting avatars3.githubusercontent.com:443 from 127.0.0.1:43532
+2016-09-23 17:29:08 INFO     connecting avatars0.githubusercontent.com:443 from 127.0.0.1:43538
+2016-09-23 17:29:08 INFO     connecting avatars2.githubusercontent.com:443 from 127.0.0.1:43542
+2016-09-23 17:29:08 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43550
+2016-09-23 17:29:08 INFO     connecting collector.githubapp.com:443 from 127.0.0.1:43554
+2016-09-23 17:29:08 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43562
+2016-09-23 17:29:08 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:43566
+2016-09-23 17:29:08 INFO     connecting live.github.com:443 from 127.0.0.1:43574
+2016-09-23 17:29:10 INFO     connecting api.github.com:443 from 127.0.0.1:43580
+2016-09-23 17:29:10 INFO     connecting api.github.com:443 from 127.0.0.1:43586
+2016-09-23 17:29:15 INFO     connecting live.github.com:443 from 127.0.0.1:43592
+2016-09-23 17:29:20 INFO     connecting clients4.google.com:443 from 127.0.0.1:43598
+2016-09-23 17:30:17 INFO     connecting clients4.google.com:443 from 127.0.0.1:43604
+2016-09-23 17:31:38 INFO     connecting clients4.google.com:443 from 127.0.0.1:43610
+2016-09-23 17:32:18 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:43622
+2016-09-23 17:32:18 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:43624
+2016-09-23 17:32:27 INFO     connecting clients1.google.com:443 from 127.0.0.1:43660
+2016-09-23 17:32:56 INFO     adding server at 0.0.0.0:8383
+2016-09-23 17:32:58 INFO     connecting clients1.google.com:443 from 127.0.0.1:43670
+2016-09-23 17:33:30 INFO     connecting clients1.google.com:443 from 127.0.0.1:43676
+2016-09-23 17:33:44 INFO     connecting clients4.google.com:443 from 127.0.0.1:43682
+2016-09-23 17:34:03 INFO     connecting clients1.google.com:443 from 127.0.0.1:43688
+2016-09-23 17:34:29 INFO     connecting coding.net:443 from 127.0.0.1:48528
+2016-09-23 17:34:30 INFO     connecting clients1.google.com:443 from 127.0.0.1:48534
+2016-09-23 17:34:30 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:48540
+2016-09-23 17:34:31 INFO     connecting stats.g.doubleclick.net:443 from 127.0.0.1:48546
+2016-09-23 17:34:39 INFO     connecting clients1.google.com:443 from 127.0.0.1:48552
+2016-09-23 17:34:49 INFO     connecting coding.net:443 from 127.0.0.1:48558
+2016-09-23 17:34:54 INFO     connecting www.google.com:443 from 127.0.0.1:48564
+2016-09-23 17:34:54 INFO     connecting co:443 from 127.0.0.1:48570
+2016-09-23 17:34:54 ERROR    unknown hostname b'co' when handling connection from 127.0.0.1:48570
+2016-09-23 17:34:54 INFO     connecting co:443 from 127.0.0.1:48574
+2016-09-23 17:34:54 ERROR    unknown hostname b'co' when handling connection from 127.0.0.1:48574
+2016-09-23 17:34:56 INFO     connecting co:443 from 127.0.0.1:48578
+2016-09-23 17:34:56 ERROR    unknown hostname b'co' when handling connection from 127.0.0.1:48578
+2016-09-23 17:34:56 INFO     connecting co:443 from 127.0.0.1:48582
+2016-09-23 17:34:56 ERROR    unknown hostname b'co' when handling connection from 127.0.0.1:48582
+2016-09-23 17:35:03 INFO     connecting www.google.com:443 from 127.0.0.1:48586
+2016-09-23 17:35:03 INFO     connecting www.google.com:443 from 127.0.0.1:48592
+2016-09-23 17:35:03 INFO     connecting www.google.com:443 from 127.0.0.1:48598
+2016-09-23 17:35:03 INFO     connecting www.google.com:443 from 127.0.0.1:48604
+2016-09-23 17:35:04 INFO     connecting www.google.com:443 from 127.0.0.1:48610
+2016-09-23 17:35:04 INFO     connecting eha:80 from 127.0.0.1:48616
+2016-09-23 17:35:04 ERROR    unknown hostname b'eha' when handling connection from 127.0.0.1:48616
+2016-09-23 17:35:11 INFO     connecting clients1.google.com:443 from 127.0.0.1:48620
+2016-09-23 17:35:16 INFO     connecting clients1.google.com:443 from 127.0.0.1:48630
+2016-09-23 17:35:29 INFO     connecting translate.googleapis.com:443 from 127.0.0.1:48644
+2016-09-23 17:35:46 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:48662
+2016-09-23 17:35:46 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:48664
+2016-09-23 17:35:46 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:48668
+2016-09-23 17:35:46 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:48670
+2016-09-23 17:35:46 INFO     connecting shadowsocks5.b0.upaiyun.com:443 from 127.0.0.1:48674
+2016-09-23 17:35:59 INFO     connecting github.com:443 from 127.0.0.1:48732
+2016-09-23 17:36:00 INFO     connecting avatars1.githubusercontent.com:443 from 127.0.0.1:48738
+2016-09-23 17:36:02 INFO     connecting avatars0.githubusercontent.com:443 from 127.0.0.1:48744
+2016-09-23 17:36:02 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:48754
+2016-09-23 17:36:02 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:48756
+2016-09-23 17:36:02 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:48758
+2016-09-23 17:36:02 INFO     connecting collector.githubapp.com:443 from 127.0.0.1:48768
+2016-09-23 17:36:02 INFO     connecting live.github.com:443 from 127.0.0.1:48774
+2016-09-23 17:36:05 INFO     connecting api.github.com:443 from 127.0.0.1:48780
+2016-09-23 17:36:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:48786
+2016-09-23 17:36:15 INFO     connecting github.com:443 from 127.0.0.1:43958
+2016-09-23 17:36:16 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43964
+2016-09-23 17:36:16 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43974
+2016-09-23 17:36:16 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43978
+2016-09-23 17:36:16 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43982
+2016-09-23 17:36:16 INFO     connecting clients1.google.com:443 from 127.0.0.1:43988
+2016-09-23 17:36:16 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:43994
+2016-09-23 17:36:17 INFO     connecting avatars1.githubusercontent.com:443 from 127.0.0.1:44010
+2016-09-23 17:36:17 INFO     connecting avatars0.githubusercontent.com:443 from 127.0.0.1:44012
+2016-09-23 17:36:17 INFO     connecting assets-cdn.github.com:443 from 127.0.0.1:44014
+2016-09-23 17:36:17 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:44020
+2016-09-23 17:36:17 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:44022
+2016-09-23 17:36:17 INFO     connecting cloud.githubusercontent.com:443 from 127.0.0.1:44024
+2016-09-23 17:36:19 INFO     connecting yunpan.cn:443 from 127.0.0.1:44036
+2016-09-23 17:36:20 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:44042
+2016-09-23 17:36:21 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:44050
+2016-09-23 17:36:21 INFO     connecting collector.githubapp.com:443 from 127.0.0.1:44052
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44072
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44074
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhmsg.com:443 from 127.0.0.1:44076
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44078
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44080
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44082
+2016-09-23 17:36:23 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:44084
+2016-09-23 17:36:25 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:44110
+2016-09-23 17:36:25 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:44112
+2016-09-23 17:36:25 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:44114
+2016-09-23 17:36:25 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:44116
+2016-09-23 17:36:25 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:44122
+2016-09-23 17:36:35 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:49046
+2016-09-23 17:36:35 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:49050
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49062
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49072
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhmsg.com:443 from 127.0.0.1:49074
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49080
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49082
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49084
+2016-09-23 17:36:35 INFO     connecting s.ssl.qhimg.com:443 from 127.0.0.1:49086
+2016-09-23 17:36:35 INFO     connecting s.360.cn:443 from 127.0.0.1:49098
+2016-09-23 17:36:35 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:49110
+2016-09-23 17:36:35 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:49114
+2016-09-23 17:36:35 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:49116
+2016-09-23 17:36:35 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:49124
+2016-09-23 17:36:35 INFO     connecting p.ssl.qhmsg.com:443 from 127.0.0.1:49126
+2016-09-23 17:36:35 INFO     connecting yunpan.360.cn:443 from 127.0.0.1:49132
+2016-09-23 17:36:35 INFO     connecting yunpan.360.cn:443 from 127.0.0.1:49140
+2016-09-23 17:36:36 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:49146
+2016-09-23 17:36:37 INFO     connecting s.360.cn:443 from 127.0.0.1:49152
+2016-09-23 17:36:37 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:49158
+2016-09-23 17:36:37 INFO     connecting 8efbda.lc.yunpan.cn:443 from 127.0.0.1:49164
+2016-09-23 17:37:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49170
+2016-09-23 17:37:16 INFO     connecting clients1.google.com:443 from 127.0.0.1:49176
+2016-09-23 17:37:55 INFO     connecting clients4.google.com:443 from 127.0.0.1:49182
+2016-09-23 17:38:05 ERROR    [Errno 111] Connection refused
+2016-09-23 17:38:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49188
+2016-09-23 17:38:12 INFO     connecting www.google.com:443 from 127.0.0.1:49194
+2016-09-23 17:38:12 INFO     connecting www.google.com:443 from 127.0.0.1:49200
+2016-09-23 17:38:12 INFO     connecting coding.net:443 from 127.0.0.1:49206
+2016-09-23 17:38:12 INFO     connecting www.google.com:443 from 127.0.0.1:49212
+2016-09-23 17:38:12 INFO     connecting www.google.com:443 from 127.0.0.1:49218
+2016-09-23 17:38:12 INFO     connecting www.google.com:443 from 127.0.0.1:49224
+2016-09-23 17:38:12 INFO     connecting clients1.google.com:443 from 127.0.0.1:49230
+2016-09-23 17:38:12 INFO     connecting www.google-analytics.com:443 from 127.0.0.1:49236
+2016-09-23 17:38:15 ERROR    [Errno 111] Connection refused
+2016-09-23 17:38:16 INFO     connecting clients1.google.com:443 from 127.0.0.1:49242
+2016-09-23 17:38:17 INFO     connecting coding.net:443 from 127.0.0.1:49248
+2016-09-23 17:38:32 ERROR    [Errno 111] Connection refused
+2016-09-23 17:38:33 INFO     connecting coding.net:443 from 127.0.0.1:49254
+2016-09-23 17:38:33 INFO     connecting clients1.google.com:443 from 127.0.0.1:49260
+2016-09-23 17:38:33 INFO     connecting coding.net:443 from 127.0.0.1:49266
+2016-09-23 17:38:33 INFO     connecting coding.net:443 from 127.0.0.1:49272
+2016-09-23 17:38:33 INFO     connecting coding.net:443 from 127.0.0.1:49278
+2016-09-23 17:38:33 INFO     connecting coding.net:443 from 127.0.0.1:49284
+2016-09-23 17:38:42 ERROR    [Errno 111] Connection refused
+2016-09-23 17:38:43 INFO     connecting clients1.google.com:443 from 127.0.0.1:49290
+2016-09-23 17:38:46 INFO     connecting coding.net:443 from 127.0.0.1:49296
+2016-09-23 17:38:53 ERROR    [Errno 111] Connection refused
+2016-09-23 17:38:54 INFO     connecting clients1.google.com:443 from 127.0.0.1:49302
+2016-09-23 17:39:04 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:04 INFO     connecting clients1.google.com:443 from 127.0.0.1:49308
+2016-09-23 17:39:04 INFO     connecting clients1.google.com:443 from 127.0.0.1:49314
+2016-09-23 17:39:07 INFO     connecting dn-coding-net-production-static.qbox.me:443 from 127.0.0.1:49320
+2016-09-23 17:39:08 INFO     connecting clients1.google.com:443 from 127.0.0.1:49326
+2016-09-23 17:39:09 INFO     connecting clients1.google.com:443 from 127.0.0.1:49332
+2016-09-23 17:39:13 INFO     connecting clients1.google.com:443 from 127.0.0.1:49338
+2016-09-23 17:39:16 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:24 INFO     connecting clients1.google.com:443 from 127.0.0.1:49344
+2016-09-23 17:39:26 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49350
+2016-09-23 17:39:34 INFO     connecting clients1.google.com:443 from 127.0.0.1:49356
+2016-09-23 17:39:36 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:46 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:48 INFO     connecting clients1.google.com:443 from 127.0.0.1:49362
+2016-09-23 17:39:56 ERROR    [Errno 111] Connection refused
+2016-09-23 17:39:56 INFO     connecting clients1.google.com:443 from 127.0.0.1:49368
+2016-09-23 17:40:06 ERROR    [Errno 111] Connection refused

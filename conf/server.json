@@ -1,0 +1,10 @@
+{
+    "server": "0.0.0.0",
+    "local_port": 1081,
+    "timeout": 500,
+    "method": "aes-256-cfb",
+    "port_password": {
+        "8381": "adminpswd",
+        "8382": "testpswd"
+    }
+}
