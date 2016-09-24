@@ -77,10 +77,13 @@ def register():
         newuser = SSUser.query.filter_by(email=email).first()
         if newuser:
             return render_template('register.html')
+        ports = [s.port for s in SSUser.query.all()]
+        if not ports:
+            port = 8383
+        else:
+            port = int(ports[-1]) + 1
         try:
-            ports = [s.port for s in SSUser.query.all()]
-            print(ports)
-            port = int(sorted([s.port for s in SSUser.query.all()])[-1]) + 1
+
             adduser(port, password)
         except Exception:
             abort(500)
