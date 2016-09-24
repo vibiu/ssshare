@@ -3,8 +3,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config(object):
-    SECRET_KEY = 'ssgroup_secret_key'
+    SECRET_KEY = 'ssshare_secret_key'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    APP_ALG = 'HS256'
 
     @staticmethod
     def init_app(app):

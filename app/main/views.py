@@ -1,8 +1,33 @@
-from flask import jsonify
+from datetime import datetime, timedelta
+import jwt
+from flask import jsonify, current_app
 from flask import request, render_template, redirect, make_response, abort
 from . import main
 from .utils import pings, adduser, remove
 from app.models import SSUser, db
+
+
+def idencode(username):
+    return jwt.encode(
+        {
+            'username': username,
+            'exp': datetime.now()
+        },
+        current_app.config['SECRET_KEY'],
+        algorithm=current_app.config['APP_ALG'],
+    )
+
+
+def iddecode(encoded):
+    try:
+        decoded = jwt.decode(
+            encoded,
+            current_app.config['SECRET_KEY'],
+            algorithms=[current_app.config['APP_ALG']],
+        )
+    except jwt.InvalidTokenError:
+        return None
+    return decoded
 
 
 @main.route('/', methods=['GET', 'POST'])
@@ -22,7 +47,7 @@ def index():
             port=ssuser.port,
             password=ssuser.password
         ))
-        resp.set_cookie('userid', username)
+        resp.set_cookie('userid', idencode(username))
         return resp
     return render_template('login.html')
 
@@ -51,11 +76,12 @@ def register():
         print(email)
         newuser = SSUser.query.filter_by(email=email).first()
         if newuser:
-            print('h')
             return render_template('register.html')
         try:
-            adduser(8383, password)
-            port = 8383
+            ports = [s.port for s in SSUser.query.all()]
+            print(ports)
+            port = int(sorted([s.port for s in SSUser.query.all()])[-1]) + 1
+            adduser(port, password)
         except Exception:
             abort(500)
         ssuser = SSUser(
@@ -75,17 +101,27 @@ def register():
                 port=ssuser.port,
                 password=ssuser.password
             ))
-            resp.set_cookie('userid', username)
+            resp.set_cookie('userid', idencode(username))
             return resp
+        else:
+            abort(500)
     return render_template('register.html')
 
 
 @main.route('/info', methods=['GET', 'POST'])
 def info():
     userid = request.cookies.get('userid')
-    if not userid:
+    decoded = iddecode(userid)
+    now = datetime.now()
+    exp = datetime.fromtimestamp(decoded['exp'])
+
+    if now - exp + timedelta(hours=8) > timedelta(seconds=1 * 60):
         return redirect('/')
-    ssuser = SSUser.query.filter_by(username=userid).first()
+    if not userid or not decoded:
+        return redirect('/')
+    else:
+        username = decoded['username']
+    ssuser = SSUser.query.filter_by(username=username).first()
     if not ssuser:
         return redirect('/')
     return render_template(
@@ -120,7 +156,6 @@ def delete():
 
 @main.route('/test', methods=['GET'])
 def test():
-    port_list = SSUser.query.order_by(SSUser.port).all()
-    ports = [p.port for p in port_list]
+    ports = sorted([s.port for s in SSUser.query.all()])
     print(ports)
-    return str(port_list)
+    return str(ports)
