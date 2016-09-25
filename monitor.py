@@ -50,7 +50,7 @@ def monitor():
                     db.session.flush()
             db.session.commit()
             with open('data/monitor.log', 'a+') as moni:
-                moni.write(data.decode('utf-8'), '\n')
+                moni.write('{}\n'.format(data.decode('utf-8')))
             # month clean
             now = datetime.now()
             if now.day == 1 and now.hour == 23 and now.minute == 59:
