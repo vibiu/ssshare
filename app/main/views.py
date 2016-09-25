@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import jwt
+import base64
 from flask import jsonify, current_app
 from flask import request, render_template, redirect, make_response, abort
 from . import main
@@ -30,6 +31,13 @@ def iddecode(encoded):
     return decoded
 
 
+def bsencode(user):
+    bsstring = 'aes-256-cfb:{}@{}:{}'.format(
+        user.password, current_app.config['DEFAULT_IP'], user.port
+    )
+    return base64.b64encode(bsstring.encode('utf-8')).decode('utf-8')
+
+
 @main.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -42,10 +50,12 @@ def index():
             return redirect('/')
         resp = make_response(render_template(
             'info.html',
+            ip=current_app.config['DEFAULT_IP'],
             transfer=ssuser.transfer,
             method=ssuser.method,
             port=ssuser.port,
-            password=ssuser.password
+            password=ssuser.password,
+            bsstring=bsencode(ssuser)
         ))
         resp.set_cookie('userid', idencode(username))
         return resp
@@ -56,37 +66,34 @@ def index():
 def register():
     if request.method == 'POST':
         code = request.form.get('code')
-        print(code)
         if code != 'admincode':
-            print('wrong code')
             return render_template('register.html')
+
         password = request.form.get('password')
-        print(password)
         repassword = request.form.get('repassword')
         if password != repassword:
-            print('w')
             return render_template('register.html')
+
         username = request.form.get('username')
-        print(username)
         newuser = SSUser.query.filter_by(username=username).first()
         if newuser:
-            print('a')
             return render_template('register.html')
+
         email = request.form.get('email')
-        print(email)
         newuser = SSUser.query.filter_by(email=email).first()
         if newuser:
             return render_template('register.html')
+
         ports = [s.port for s in SSUser.query.all()]
         if not ports:
-            port = 8383
+            port = current_app.config['DEFAUT_PORT']
         else:
             port = int(ports[-1]) + 1
         try:
-
             adduser(port, password)
         except Exception:
             abort(500)
+
         ssuser = SSUser(
             username=username,
             password=password,
@@ -99,10 +106,12 @@ def register():
         if ssuser:
             resp = make_response(render_template(
                 'info.html',
+                ip=current_app.config['DEFAULT_IP'],
                 transfer=ssuser.transfer,
                 method=ssuser.method,
                 port=ssuser.port,
-                password=ssuser.password
+                password=ssuser.password,
+                bsstring=bsencode(ssuser)
             ))
             resp.set_cookie('userid', idencode(username))
             return resp
@@ -114,19 +123,25 @@ def register():
 @main.route('/info', methods=['GET', 'POST'])
 def info():
     userid = request.cookies.get('userid')
+    if not userid:
+        return redirect('/')
+
     decoded = iddecode(userid)
+    if not decoded:
+        return redirect('/')
+
     now = datetime.now()
     exp = datetime.fromtimestamp(decoded['exp'])
-
-    if now - exp + timedelta(hours=8) > timedelta(seconds=1 * 60):
-        return redirect('/')
-    if not userid or not decoded:
+    last_time = current_app.config['AUTH_EXP']
+    if now - exp + timedelta(hours=8) > timedelta(seconds=last_time):
         return redirect('/')
     else:
         username = decoded['username']
+
     ssuser = SSUser.query.filter_by(username=username).first()
     if not ssuser:
         return redirect('/')
+
     return render_template(
         'info.html',
         transfer=ssuser.transfer,
@@ -157,8 +172,12 @@ def delete():
     return jsonify({'message': message})
 
 
-@main.route('/test', methods=['GET'])
-def test():
+@main.route('/ports', methods=['GET'])
+def ports():
     ports = sorted([s.port for s in SSUser.query.all()])
-    print(ports)
     return str(ports)
+
+
+@main.route('/tester', methods=['GET'])
+def test():
+    return render_template('test.html')

@@ -14,3 +14,4 @@ class SSUser(db.Model):
     use_time = db.Column(db.DateTime, default=datetime.now())
     method = db.Column(db.Unicode(16), default='aes-256-cfb')
     transfer = db.Column(db.Integer, default=0)
+    activate = db.Column(db.Boolean, default=True)

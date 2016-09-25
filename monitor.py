@@ -1,28 +1,16 @@
 import os
 import sys
+import time
 import socket
 import signal
 import json
-# from datetime import datetime
+from datetime import datetime
 from app import db
 from app.models import SSUser
 from manage import app
 
-# class SSUser():
-#     __tablename__ = 'ssusers'
-#     id = db.Column(db.Integer, primary_key=True)
-#     username = db.Column(db.Unicode(64))
-#     password = db.Column(db.Unicode(64))
-#     email = db.Column(db.Unicode(64))
-#     eduno = db.Column(db.Unicode(16))
-#     port = db.Column(db.Unicode(5))
-#     signup_time = db.Column(db.DateTime, default=datetime.now())
-#     use_time = db.Column(db.DateTime, default=datetime.now())
-#     method = db.Column(db.Unicode(16), default='aes-256-cfb')
-
 
 CLIENT_SOCK = '/tmp/client3.sock'
-# SERVER_SOCK = '/tmp/shadowsocks.sock'
 SERVER_SOCK = '/tmp/shadowsocks.sock'
 
 
@@ -33,8 +21,13 @@ client.bind(CLIENT_SOCK)
 client.connect(SERVER_SOCK)
 
 
-def parse_data(data=''):
-    pass
+def remove(port):
+    data = 'remove: {"server_port": %d}' % port
+    print(data)
+    client.send(data.encode('utf-8'))
+    message = client.recv(1506).decode('utf-8')
+    print(message)
+    return message
 
 
 def monitor():
@@ -48,11 +41,27 @@ def monitor():
                 ssuser = SSUser.query.filter_by(port=port).first()
                 if ssuser:
                     ssuser.transfer += trans
+
+                    if ssuser.transfer > 10e7:
+                        remove(ssuser.port)
+                        ssuser.activate = False
+
                     db.session.add(ssuser)
                     db.session.flush()
             db.session.commit()
             with open('data/monitor.log', 'a+') as moni:
-                moni.write('transfering...\n{}\n'.format(data))
+                moni.write(data.decode('utf-8'), '\n')
+            # month clean
+            now = datetime.now()
+            if now.day == 1 and now.hour == 23 and now.minute == 59:
+                time.sleep(2 * 60)
+                for user in SSUser.query.all():
+                    user.transfer = 0
+                    if user.activate is False:
+                        user.activate = True
+                    db.session.add(user)
+                    db.session.flush()
+                db.session.commit()
 
 
 def write_pid_file():
@@ -83,6 +92,18 @@ def start():
     monitor()
 
 
+def init():
+    with app.app_context():
+        ssuser = SSUser(
+            username='admin',
+            password='123456',
+            port=8381,
+        )
+        db.session.add(ssuser)
+        db.session.commit()
+    print('insert admin ok.')
+
+
 def end():
     with open('data/ssshare.pid', 'r') as f:
         pid = int(f.read())
@@ -90,14 +111,6 @@ def end():
     os.remove('data/ssshare.pid')
     print('killing pid: {}'.format(pid))
 
-
-def main():
-    if len(sys.argv) < 2 or sys.argv[1] == 'start':
-        start()
-    elif sys.argv[1] == 'info':
-        info()
-    else:
-        end()
 
 def test():
     def pings():
@@ -109,23 +122,17 @@ def test():
     while True:
         print(client.recv(1506))
 
-def insert_user():
-    # print(dir(app))
-    with app.app_context():
-        ssuser = SSUser(
-            username='admin',
-            password='123456',
-            port=8381,
-        )
-        db.session.add(ssuser)
-        db.session.commit()
+
+def main():
+    if len(sys.argv) < 2 or sys.argv[1] == 'start':
+        start()
+    elif sys.argv[1] == 'info':
+        info()
+    elif sys.argv[1] == 'init':
+        init()
+    else:
+        end()
 
 
 if __name__ == '__main__':
-    # for i in range(10):
-    #     client.send(b'ping')
-    #     print(client.recv(1232))
-    # monitor()
     main()
-    # test()
-    # insert_user()

@@ -5,11 +5,8 @@ import flask
 import socket
 import subprocess
 from flask_script import Manager
-# from bin.monitor import monitor
 from app import db
 from app import create_app
-# from bin.monitor import start, end, info, remove, adduser
-# from bin.monitor import SocketClient, ping
 app = create_app('default')
 manager = Manager(app)
 
@@ -21,7 +18,7 @@ def createall():
 
 @manager.command
 def dropall():
-    db.dropall()
+    db.drop_all()
 
 
 if __name__ == '__main__':

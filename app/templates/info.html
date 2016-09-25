@@ -25,10 +25,10 @@
         <div class="header">
             用户信息
         </div>
-        <form name="reg" role="form" action="" method="get" onsubmit="return regcheck()">
-            <div class="body bg-gray">
+        <form name="info" role="form" action="" method="get" onsubmit="return regcheck()">
+            <div class="body bg-gray" id="content">
                 <div class="form-group">
-                    ip: 127.0.0.1
+                    ip: {{ ip }}
                 </div>
                 <div class="form-group">
                     port: {{ port }}
@@ -42,10 +42,18 @@
                 <div class="form-group">
                     transfer: {{ transfer }}
                 </div>
+                <div class="form-group" id="qr">
+                </div>
             </div>
+
             <div class="footer">
                 <input type="hidden" name="do" value="login">
-                <button type="submit" class="btn bg-olive btn-block" name="login">登出</button>
+                <button type="submit" class="btn bg-olive btn-block" name="login" onclick="deleteCookie('userid')">登出</button>
+                <div>
+                <div class="func" style="height: 20px">
+                    <a style="float:left" onclick="renderQR('haha')">生成二维码</a>
+                    <!-- <a style="float:right">生成json配置文件</a> -->
+                </div>
             </div>
         </form>
     </div>
@@ -53,7 +61,20 @@
     <script src="/static/js/jquery-2.0.3.min.js"></script>
     <!-- Bootstrap -->
     <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
-    <script>/*https://shadowsocks5.b0.upaiyun.com*/</script>
+    <!-- Jquery QRcode -->
+    <script src="/static/js/qrcode.js"></script>
+    <script src="/static/js/jquery.qrcode.js"></script>
+    <script>
+    function deleteCookie(name) {
+        document.cookie = name+"=;expires="+(new Date(0)).toGMTString();
+    }
+    function renderQR(strings) {
+        $('#qr').qrcode('ss://' + '{{bsstring}}')
+    }
+    function buildJson(){
+
+    }
+    </script>
 </body>
 
 </html>
