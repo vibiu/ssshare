@@ -1,0 +1,8 @@
+{
+    "server": "107.170.202.97",
+    "server_port": 8384,
+    "local_port": 1082,
+    "password": "^shadowsocks$",
+    "timeout": 500,
+    "method": "aes-256-cfb"
+}

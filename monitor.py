@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 from app import db
 from app.models import SSUser
+from app.main.utils import adduser
 from manage import app
 
 
@@ -94,14 +95,27 @@ def start():
 
 def init():
     with app.app_context():
-        ssuser = SSUser(
+        adminssuser = SSUser(
             username='admin',
-            password='123456',
+            password='adminpswd',
             port=8381,
         )
-        db.session.add(ssuser)
+        testssuer = SSUser(
+            username='test',
+            password='testpswd',
+            port=8382
+        )
+        db.session.add(adminssuser)
+        db.session.add(testssuer)
         db.session.commit()
     print('insert admin ok.')
+
+
+def update():
+    with app.app_context():
+        for user in SSUser.query.all():
+            adduser(user.port, user.password)
+            print('adding..' + user.port + ':' + user.username)
 
 
 def end():
