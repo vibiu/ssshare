@@ -1,6 +1,6 @@
 {
-    "server": "162.243.138.135",
-    "server_port": 8383,
+    "server": "107.170.234.10",
+    "server_port": 8384,
     "local_port": 1082,
     "password": "^shadowsocks$",
     "timeout": 500,

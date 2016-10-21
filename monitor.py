@@ -144,6 +144,8 @@ def main():
         info()
     elif sys.argv[1] == 'init':
         init()
+    elif sys.argv[1] == 'update':
+        update()
     else:
         end()
 

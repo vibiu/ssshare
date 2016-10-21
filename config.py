@@ -9,7 +9,7 @@ class Config(object):
     APP_ALG = 'HS256'
     DEFAUT_PORT = 8383
     AUTH_EXP = 30 * 60
-    DEFAULT_IP = '127.0.0.1'
+    DEFAULT_IP= '127.0.0.1'
 
     @staticmethod
     def init_app(app):
